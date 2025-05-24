@@ -8,14 +8,12 @@ export const config: PlasmoCSConfig = {
   matches: ["https://studio.youtube.com/*", "https://www.youtube.com/*"]
 }
 
-// injectc to shadowdom
 export const getStyle = () => {
   const style = document.createElement("style")
   style.textContent = cssText
   return style
 }
 
-// style scoping
 export const getShadowHostId = () => "plasmo-discord-button"
 
 export const getInlineAnchor: PlasmoGetInlineAnchor = async () => {
@@ -64,7 +62,7 @@ const DiscordButton: React.FC<DiscordButtonProps> = ({
           fill-opacity="1"
         />
       </svg>
-      Join the Discord
+      Join Community
     </button>
   )
 }

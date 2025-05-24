@@ -1,0 +1,88 @@
+#newstudio-toggle-root {
+  margin-right: 12px;
+  display: flex;
+  align-items: center;
+  height: auto;
+}
+
+/* --- DEFAULT: LIGHT MODE --- */
+.toggle-container {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: Roboto, Arial, sans-serif;
+  font-weight: 500;
+  padding: 0 12px;
+  background: #3e3e3e;
+  color: #f2f2f2;
+  border: 1px none solid;
+  border-radius: 18px;
+  line-height: 36px;
+  word-spacing: 0px;
+}
+
+.toggle-label {
+  font-size: 14px;
+}
+
+.toggle-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.toggle-switch {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 20px;
+}
+
+.toggle-switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.2s;
+  border-radius: 20px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  left: 2px;
+  bottom: 2px;
+  background-color: white;
+  transition: 0.2s;
+  border-radius: 50%;
+}
+
+.toggle-switch input:checked + .slider {
+  background-color: #4caf50;
+}
+
+.toggle-switch input:checked + .slider:before {
+  transform: translateX(20px);
+}
+
+.toggle-container.light-mode {
+  background: #f2f2f2;
+  color: #212121;
+}
+
+/* --- DARK MODE via system preference --- */
+
+.toggle-container.dark-mode {
+  background: #3e3e3e;
+  color: #f2f2f2;
+}
