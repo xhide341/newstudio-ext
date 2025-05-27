@@ -1,0 +1,25 @@
+.ns-discord-button {
+  display: flex;
+  height: auto;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+  background-color: #4752c4;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  transition: background-color 0.2s ease;
+}
+
+.ns-discord-button:hover {
+  background-color: #363f9e;
+}
+
+#plasmo-discord-button {
+  display: flex;
+  align-items: center;
+  height: auto;
+}
