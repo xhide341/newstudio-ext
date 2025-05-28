@@ -10,6 +10,7 @@
     "package": "plasmo package"
   },
   "dependencies": {
+    "@plasmohq/messaging": "^0.7.1",
     "plasmo": "0.90.5",
     "react": "18.2.0",
     "react-dom": "18.2.0"
@@ -20,8 +21,12 @@
     "@types/node": "20.11.5",
     "@types/react": "18.2.48",
     "@types/react-dom": "18.2.18",
+    "os-browserify": "^0.3.0",
+    "path-browserify": "^1.0.0",
     "prettier": "3.2.4",
-    "typescript": "5.3.3"
+    "stream-browserify": "^3.0.0",
+    "typescript": "5.3.3",
+    "util": "^0.12.3"
   },
   "manifest": {
     "host_permissions": [
